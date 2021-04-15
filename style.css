@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h3, p, label {
+    color: #373f47;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    width: 100%;
+}
+
+.container {
+    width: 400px;
+    height: 667px;
+    background-color: #fff;
+}
+
+.content-container {
+    padding: 30px 50px;
+}
+
+.top-container {
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 45px;
+}
+
+
+.top-container > p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 40%;
+}
+
+.get-started {
+    color: #2e91fc;
+    
+}
+
+.get-started:hover {
+    color: #373f47;
+}
+
+.get-started:focus {
+    outline: none;
+}
+
+input[type="password"], input[type="email"] {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+    letter-spacing: 1px;
+}
+
+.check-ctr {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.check-ctr > input {
+    transform: scale(0.9);
+    margin-right: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #2e91fc;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #286090;
+}
+
+.pw-forgot {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pw-forgot > a {
+    color: gray;
+    font-size: 14px;
+}
+
+.pw-forgot > a:hover {
+    color: #373f47;;
+}
+
+@media screen and (min-width: 760px) {
+    .container {
+        box-shadow: 5px 3px 20px -3px #999999;
+        height: 525px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 800px;
+        display: flex;
+    }
+
+    .content-container {
+        width: 50%;
+        height: 100%
+    }
+
+    .logo-container {
+        text-align: left;
+    }
+
+    .img-container {
+        background: bottom / 100% url('https://images.unsplash.com/photo-1579389083395-4507e98b5e67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+        width: 50%;
+        height: 100%;
+    }
+}
